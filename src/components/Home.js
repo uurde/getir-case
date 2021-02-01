@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Pagination from './Pagination';
 import { addToCart, getItems, filterByType } from '../actions';
 import Brands from './Brands';
+import Tags from './Tags';
 
 class Home extends Component {
     componentDidMount() {
@@ -83,20 +84,7 @@ class Home extends Component {
                         <p>Tags</p>
                         <div className="card">
                             <div className="card-content">
-                                <form>
-                                    <div className="row">
-                                        <div className="input-field col s12">
-                                            <input id="input_text" type="text" data-length="10"></input>
-                                            <label htmlFor="input_text">Search tag</label>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span>Red</span>
-                                        </label>
-                                    </p>
-                                </form>
+                                <Tags/>
                             </div>
                         </div>
                     </div>
