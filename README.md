@@ -1,15 +1,20 @@
-# Basic e-commerce cart application built with React & Redux
+# Market application built with React & Redux
 
-This simple application prototype shows how we can use React and Redux to build a friendly user experience with instant visual updates.
+This project developed with custom ui for Getir Interview case.
 
 ## Demo
-[Here](https://my-shopping-cart-leawwzhsmf.now.sh/)
+[Here](https://getir-case-ugur.herokuapp.com/)
+
+## Extra Packages
+* Materialize css and icons based ui
+* Json Server for local development
 
 ## Features
-* Add and remove items 
+* Add and remove items
 * Remove items
 * Edit the quantity of the items in real time
-* Calculate automatically the total including the shipping (if chosen)
+* Sorting (Not Working)
+* Filtering (Not Working)
 
 # Getting started
 ### Requirements
@@ -21,6 +26,14 @@ This simple application prototype shows how we can use React and Redux to build 
 ```bash
 npm install
 ```
+
+ ### Start the JSON Server
+ Excute the following command: 
+```bash
+json-server --watch src/api/db.json
+```
+The server will start automatically in your browser on http://localhost:3001
+
  ### Start the React App
  Excute the following command: 
 ```bash
